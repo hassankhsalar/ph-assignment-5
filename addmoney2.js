@@ -8,7 +8,7 @@ document.getElementById('card-1-donate').addEventListener('click', function(){
     
     //console.log(fundC1, addMoneyC1, userBalance);
 
-    if(userBalance >= addMoneyC1){
+    if(userBalance >= addMoneyC1 && addMoneyC1 > 0){
 
        const currentFund = fundC1 + addMoneyC1;
        const currentBalance = userBalance - addMoneyC1;
@@ -22,7 +22,7 @@ document.getElementById('card-1-donate').addEventListener('click', function(){
        const h2 = document.createElement('h2');
        h2.innerText = `Donated BDT ${addMoneyC1} for ${cardTitle}`;
        const p = document.createElement('p');
-       p.innerText = `${now}`
+       p.innerText = `Date: ${now}`
        const div = document.createElement('div');
        console.log(now);
 
@@ -31,9 +31,12 @@ document.getElementById('card-1-donate').addEventListener('click', function(){
        
        
        document.getElementById('history-container').appendChild(div);
+
+       const modal = document.getElementById('my_modal_5');
+        modal.showModal();
     }
     else{
-        alert('Insufficient Balance!')
+        alert('Insufficient / Invalid Balance!')
     }
 })
 
@@ -47,7 +50,7 @@ document.getElementById('card-2-donate').addEventListener('click', function(){
     
     //console.log(fundC1, addMoneyC1, userBalance);
 
-    if(userBalance >= addMoneyC2){
+    if(userBalance >= addMoneyC2 && addMoneyC2 > 0){
 
        const currentFund = fundC2 + addMoneyC2;
        const currentBalance = userBalance - addMoneyC2;
@@ -61,7 +64,7 @@ document.getElementById('card-2-donate').addEventListener('click', function(){
         const h2 = document.createElement('h2');
         h2.innerText = `Donated BDT ${addMoneyC2} for ${cardTitle}`;
         const p = document.createElement('p');
-        p.innerText = `${now}`
+        p.innerText = `Date: ${now}`
         const div = document.createElement('div');
         console.log(now);
  
@@ -70,9 +73,12 @@ document.getElementById('card-2-donate').addEventListener('click', function(){
         
         
         document.getElementById('history-container').appendChild(div);
+
+        const modal = document.getElementById('my_modal_5');
+        modal.showModal();
     }
     else{
-        alert('Insufficient Balance!')
+        alert('Insufficient / Invalid Balance!')
     }
 })
 
@@ -86,7 +92,7 @@ document.getElementById('card-3-donate').addEventListener('click', function(){
     
     //console.log(fundC1, addMoneyC1, userBalance);
 
-    if(userBalance >= addMoneyC3){
+    if(userBalance >= addMoneyC3 && addMoneyC3 > 0){
 
        const currentFund = fundC3 + addMoneyC3;
        const currentBalance = userBalance - addMoneyC3;
@@ -100,7 +106,7 @@ document.getElementById('card-3-donate').addEventListener('click', function(){
         const h2 = document.createElement('h2');
         h2.innerText = `Donated BDT ${addMoneyC3} for ${cardTitle}`;
         const p = document.createElement('p');
-        p.innerText = `${now}`
+        p.innerText = `Date: ${now}`
         const div = document.createElement('div');
         console.log(now);
  
@@ -109,8 +115,11 @@ document.getElementById('card-3-donate').addEventListener('click', function(){
         
         
         document.getElementById('history-container').appendChild(div);
+
+        const modal = document.getElementById('my_modal_5');
+        modal.showModal();
     }
     else{
-        alert('Insufficient Balance!')
+        alert('Insufficient / Invalid Balance!')
     }
 })

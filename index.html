@@ -9,6 +9,7 @@
       </style>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    
 </head>
 <body class="Lexend">
   <!-- navbar start -->
@@ -88,7 +89,7 @@
       <!-- card 2 end -->
 
       <!-- card 3 start -->
-      <div id="card3" class="flex justify-center pt-16 ">
+      <div id="card3" class="flex justify-center pt-16 mb-60">
         <div class="card bg-base-100 w-5/6 h-4/6 flex	justify-center shadow-xl  flex-row">
           <figure class="w-full">
             <img
@@ -126,8 +127,28 @@
   </section>    
      <!-- history end -->
 
+    <!-- modal part -->
+
+<!-- The Modal -->
+<button class="btn hidden" onclick="my_modal_5.showModal()">open modal</button>
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <h3 class="text-4xl font-bold text-center">Congrats! <img class="ml-56" src="./images/coin.png" alt=""></h3>
+    <p class="py-4 text-center">You have donated for humankind</p>
+    <h3 class="text-4xl font-bold text-center">Successfully</h3>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn bg-cyan-400">Close Confirmation</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+    <!-- modal end -->
+
  <script src="./utilities.js"></script>
  <script src="./features.js"></script>
  <script src="./addmoney2.js"></script>
+ <script src="./modal.js"></script>
 </body>
 </html>
