@@ -10,7 +10,7 @@ document.getElementById('card-1-donate').addEventListener('click', function(){
     const userBalanceNumber = parseInt(userBalance);
     //console.log(addMoneyC1, userBalance);
 
-    if(userBalanceNumber => addMoneyC1Number){
+    if(userBalanceNumber >= addMoneyC1Number){
 
        const currentFund = fundC1Number + addMoneyC1Number;
        const currentBalance = userBalanceNumber - addMoneyC1Number;

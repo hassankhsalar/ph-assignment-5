@@ -28,15 +28,15 @@
           </div>
         </div>
       <div class="flex justify-center pt-16	gap-3">
-        <a href="" class="btn bg-cyan-400">Donation</a>
-        <a href="" class="btn border-slate-300">History</a>
+        <button id="show-donation-page" class="btn bg-cyan-400">Donation</button>
+        <button id="show-history-page" class="btn bg-cyan-400">History</button>
       </div>
     </div>
  <!-- navbar end -->
   <!-- cards start -->
-
+<section id="cards" class="">
     <!-- card 1 start -->
-    <div class="flex justify-center mt-64	">
+    <div id="card1" class="flex justify-center mt-64	">
         <div class="card bg-base-100 w-5/6 h-4/6 flex	justify-center shadow-xl  flex-row">
           <figure class="w-9/12	">
             <img
@@ -49,7 +49,7 @@
               <div><img src="./images/coin.png" alt=""></div>
               <div><p> <span id="card-1-fund">5500</span> BDT</p></div>
             </div>  
-            <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+            <h2 id="card1title" class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
             <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
             <div class="card-actions flex-col	">
               <textarea class="w-96 border-2 rounded-xl text-center content-center" name="" id="card-1-input" placeholder="Write Donation Amount"></textarea>
@@ -62,7 +62,7 @@
       <!-- card 1 end --> 
 
       <!-- card 2 start -->
-      <div class="flex justify-center pt-16 ">
+      <div id="card2" class="flex justify-center pt-16 ">
         <div class="card bg-base-100 w-5/6 h-4/6 flex	justify-center shadow-xl  flex-row">
           <figure class="w-full">
             <img
@@ -75,11 +75,11 @@
               <div><img src="./images/coin.png" alt=""></div>
               <div><p><span id="card-2-fund">600</span> BDT</p></div>
             </div>  
-            <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
+            <h2 id="card2title" class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
             <p>The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
             <div class="card-actions flex-col	">
               <textarea class="w-96 border-2 rounded-xl text-center content-center" name="" id="card-2-input" placeholder="Write Donation Amount"></textarea>
-              <button class="btn bg-cyan-400 w-96">Donate Now</button>
+              <button id="card-2-donate" class="btn bg-cyan-400 w-96">Donate Now</button>
             </div>
           </div>
         </div>
@@ -88,7 +88,7 @@
       <!-- card 2 end -->
 
       <!-- card 3 start -->
-      <div class="flex justify-center pt-16 ">
+      <div id="card3" class="flex justify-center pt-16 ">
         <div class="card bg-base-100 w-5/6 h-4/6 flex	justify-center shadow-xl  flex-row">
           <figure class="w-full">
             <img
@@ -101,35 +101,33 @@
               <div><img src="./images/coin.png" alt=""></div>
               <div><p><span id="card-3-fund">2400</span> BDT</p></div>
             </div>  
-            <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
+            <h2 id="card3title" class="card-title">Aid for Injured in the Quota Movement</h2>
             <p>The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
             <div class="card-actions flex-col	">
               <textarea class="w-96 border-2 rounded-xl text-center content-center" name="" id="card-3-input" placeholder="Write Donation Amount"></textarea>
-              <button class="btn bg-cyan-400 w-96">Donate Now</button>
+              <button id="card-3-donate" class="btn bg-cyan-400 w-96">Donate Now</button>
             </div>
           </div>
         </div>
 
       </div> 
       <!-- card 3 end -->
+  </section>      
    <!-- cards end -->
     <!-- history start -->
-     <div class="w-full flex flex-col justify-center items-center gap-10 border-2 mt-72 hidden">
-        <div class="border-2 w-3/5 text-center">
+ <section id="history" class="hidden">    
+     <div id="history-container" class="w-full flex flex-col justify-center items-center gap-10  mt-72">
+        <div id="" class=" w-3/5 text-center">
           <h2> <span>96500</span> Taka is Donated for famine-2024 at Feni, Bangladesh</h2>
           <p>Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
         </div>
-        <div class="border-2 w-3/5 text-center">
-          <h2> <span>6500</span>6500 Taka is Donated for Flood Relief in Feni,Bangladesh</h2>
-          <p>Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
-        </div>
-        <div class="border-2 w-3/5 text-center ">
-          <h2> <span>15500</span>15500 Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h2>
-          <p>Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
-        </div>
+
      </div>
+  </section>    
      <!-- history end -->
- <script src="./index.js"></script>
- <script src="./addmoney.js"></script>
+
+ <script src="./utilities.js"></script>
+ <script src="./features.js"></script>
+ <script src="./addmoney2.js"></script>
 </body>
 </html>
