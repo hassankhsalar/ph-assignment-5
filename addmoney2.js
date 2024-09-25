@@ -36,7 +36,7 @@ document.getElementById('card-1-donate').addEventListener('click', function(){
         modal.showModal();
     }
     else{
-        alert('Insufficient / Invalid Balance!')
+        alert('Insufficient Balance!  / Invalid Value')
     }
 })
 
@@ -78,7 +78,7 @@ document.getElementById('card-2-donate').addEventListener('click', function(){
         modal.showModal();
     }
     else{
-        alert('Insufficient / Invalid Balance!')
+        alert('Insufficient Balance!  / Invalid Value')
     }
 })
 
@@ -120,6 +120,6 @@ document.getElementById('card-3-donate').addEventListener('click', function(){
         modal.showModal();
     }
     else{
-        alert('Insufficient / Invalid Balance!')
+        alert('Insufficient Balance!  / Invalid Value')
     }
 })
