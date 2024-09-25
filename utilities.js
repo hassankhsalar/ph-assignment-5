@@ -1,3 +1,6 @@
+// shared functions
+
+
 function getInputFieldValueById(id){
     const inputValue = document.getElementById(id).value;
     const inputNumber = parseInt(inputValue);
